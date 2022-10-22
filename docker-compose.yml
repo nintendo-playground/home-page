@@ -1,0 +1,10 @@
+
+version: "3"
+services:
+  playground:
+    build: playground
+    restart: always
+    ports:
+      - 127.0.0.1:${PORT}:8000
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
